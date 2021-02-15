@@ -89,9 +89,8 @@ h1{
 .links{
    width:40%;
    display:flex;
-   justify-content:flex-end ;
-   align-items: center;
-   
+   justify-content:flex-end;
+   align-items: center;  
 }
 .home{
     background-color: black;
@@ -220,3 +219,57 @@ footer button:hover{
     color:white;
 }
 
+/* Media Queries */
+
+/* Tablet */
+@media(max-width:800px){
+    h1{
+        font-size: 3.5rem;
+    }
+    #top{
+        height: 35vh;
+    }
+}
+/* Phone */
+@media(max-width:500px){
+    h1{
+        font-size: 4.5rem;
+    }
+    .name{
+        width:100%;
+        align-content: center;
+        text-align: center;
+    }
+    header nav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 2% 0;
+    }
+    header nav a{
+        padding:5% 10%;
+        width:65%;
+        text-align: center;
+    }
+    .links{
+        flex-direction: column;
+    }
+    #top{
+        height: 30vh;
+    }
+    .cta h2{
+        font-size: 4rem;
+    }
+    .main{
+        justify-content: space-between;
+    }
+    .main .tile{
+        width:50%;
+    }
+    .main .tile img{
+        width:85%;
+    }
+    footer button{
+        width:20%;
+    }
+}
